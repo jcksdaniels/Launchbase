@@ -16,7 +16,19 @@ nunjucks.configure('views', {
 })
 
 server.get("/", function (req, res){
-    return res.render("about")
+
+    const about = {
+        avatar_url:'https://avatars2.githubusercontent.com/u/10780436?s=400&u=6673a5a27add0ab081ab17c78b3a078216b3cd44&v=4', 
+        name: 'Daniel Cerqueira', 
+        role:'Web developer', 
+        description: 'Each little day goes a long way', 
+        links:[
+            {name:'Github', url:'https://github.com/jcksdaniels'}, 
+            {name:'Twitter', url:'https://twitter.com/jcksdaniels'}, 
+            {name: 'LinkedIn', url:'https://www.linkedin.com/in/jcksdaniels/'}
+        ]
+    }
+    return res.render("about", {about})
 
 })
 
