@@ -113,6 +113,8 @@
 .card-info{
 
     padding: 24px;
+    padding-top:5px;
+
 }
 
 .card-info{
@@ -177,4 +179,29 @@ iframe {
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+
+/* ===== VIDEO PAGE =====*/
+
+.video{
+
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card-video-container{
+    position: relative;
+    padding-top: 62.5%;
+
+}
+
+.card-video-container iframe{
+
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+
+
 }
